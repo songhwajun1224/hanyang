@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>설문조사</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="site">현장 선택</label>
+                <select id="site" name="site" required>
+                    <option value="">현장을 선택하세요</option>
+                    <option value="site1">현장 1</option>
+                    <option value="site2">현장 2</option>
+                    <option value="site3">현장 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age-group">연령대 선택</label>
+                <select id="age-group" name="age-group" required>
+                    <option value="">연령대를 선택하세요</option>
+                    <option value="20s">20대</option>
+                    <option value="30s">30대</option>
+                    <option value="40s">40대</option>
+                    <option value="50s">50대</option>
+                    <option value="60_plus">60대 이상</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">성별 선택</label>
+                <select id="gender" name="gender" required>
+                    <option value="">성별을 선택하세요</option>
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                    <option value="other">기타</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="years-of-service">근속 년 수</label>
+                <select id="years-of-service" name="years-of-service" required>
+                    <option value="">근속 년 수를 선택하세요</option>
+                    <option value="less_than_1_month">1개월 미만</option>
+                    <option value="1_6_months">1개월 ~ 6개월 미만</option>
+                    <option value="6_months_1_year">6개월 ~ 1년 미만</option>
+                    <option value="1_2_years">1년 ~ 2년 미만</option>
+                    <option value="2_5_years">2년 ~ 5년 미만</option>
+                    <option value="5_10_years">5년 ~ 10년 미만</option>
+                    <option value="more_than_10_years">10년 이상</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="job-category">직종</label>
+                <select id="job-category" name="job-category" required>
+                    <option value="">직종을 선택하세요</option>
+                    <option value="piping">배관</option>
+                    <option value="duct">덕트</option>
+                    <option value="welding">용접</option>
+                    <option value="electrical_instrumentation">전기 계장</option>
+                    <option value="insulation">보온</option>
+                    <option value="fabrication">제관</option>
+                    <option value="scaffolding">도비</option>
+                    <option value="assistant">보조공</option>
+                    <option value="safety_officer">안전담당자(화기/신호수/유도원)</option>
+                </select>
+            </div>
+
+            <!-- 추가된 질문들 -->
+            <div class="form-group">
+                <label>나는 작업에 대한 안전규정을 알고 있다</label>
+                <select name="question1" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>작업 전/중/후 안전점검을 실제로 이행하고 있다</label>
+                <select name="question2" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>공사관리자(관리감독자)는 업무 시 안전에 대한 지도와 지적을 이행하고 있는 것 같다</label>
+                <select name="question3" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>공사 일정보다는 안전규정의 준수가 우선 시 되고 있다고 생각한다</label>
+                <select name="question4" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>작업의 영향으로 신체의 통증이나 이상이 발생한 경우가 없다</label>
+                <select name="question5" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>사고 발생 시 보고절차를 정확하게 알고있다</label>
+                <select name="question6" required>
+                    <option value="">선택하세요</option>
+                    <option value="strongly_agree">매우 그렇다</option>
+                    <option value="agree">그렇다</option>
+                    <option value="neutral">보통</option>
+                    <option value="disagree">그렇지 않다</option>
+                    <option value="strongly_disagree">매우 그렇지 않다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>본인, 반장(팀장), 동료 중 위험성평가에 참여하고 있는 사람이 있다</label>
+                <select name="question7" required>
+                    <option value="">선택하세요</option>
+                    <option value="yes">그렇다</option>
+                    <option value="no">아니다</option>
+                    <option value="unknown">모른다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>TBM, 교육시간 중 위험성평가 내용을 공유 받고 있다</label>
+                <select name="question8" required>
+                    <option value="">선택하세요</option>
+                    <option value="yes">그렇다</option>
+                    <option value="no">아니다</option>
+                    <option value="unknown">모른다</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="voc">개선 요청 사항(VOC)</label>
+                <textarea id="voc" name="voc" rows="4" placeholder="개선 요청 사항을 입력하세요"></textarea>
+            </div>
+            <button type="submit">제출</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
